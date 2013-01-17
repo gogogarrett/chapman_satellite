@@ -1,0 +1,18 @@
+<%= yield :before_javascript_libraries -%>
+<%= yield :javascript_libraries %>
+<%= yield :after_javascript_libraries %>
+<% if request.env['HTTP_USER_AGENT'] =~ /MSIE/ %>
+  <!--[if lt IE 7 ]>
+    <%= javascript_include_tag 'dd_belatedpng' %>
+    <script> DD_belatedPNG.fix('img, .png_bg'); //fix any <img> or .png_bg background-images </script>
+  <![endif]-->
+<% end %>
+<%= javascript_include_tag 'application' %>
+<%= yield :javascripts -%>
+
+<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css' />
+
+<script>
+  Cufon.replace('h1,h2,h3,h4,h5,h6');
+  Cufon.replace('#boxes .box .box-top p');
+</script>

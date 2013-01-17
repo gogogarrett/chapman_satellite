@@ -1,0 +1,214 @@
+/* 1. Black Button */
+a.button-black {
+	border-top:1px solid #111;
+	padding:0 0px;
+	display:inline-block;
+	font-family:Arial;
+	width: auto;
+	font-size:12px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+a.button-black span {
+	background: #111; /* for non-css3 browsers */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#151515', endColorstr='#080808'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#151515), to(#080808)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #151515,  #080808); /* for firefox 3.6+ */ 
+	border-top:1px solid #2a2a2a;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	
+	padding:5px 20px;
+	text-decoration:none;
+	color: #fff;
+	display:inline-block;
+	font-family:Arial;
+	font-size:12px;
+	text-transform:uppercase;
+	text-shadow:-1px -1px 0 #000;
+	font-weight:bold;
+	text-align:center;
+	text-decoration:none;
+}
+a.button-black span:hover {
+	background: #202020; /* for non-css3 browsers */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#232323', endColorstr='#161616'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#232323), to(#161616)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #232323,  #161616); /* for firefox 3.6+ */ 
+	border-top:1px solid #363636;
+	color: #fff;
+}
+
+/* 2. Blue Button */
+a.button-blue {
+	border-top:1px solid #07426a;
+	padding:0 0px;
+	display:inline-block;
+	font-family:Arial;
+	width: auto;
+	font-size:12px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+a.button-blue span {
+	background: #0b3657; /* for non-css3 browsers */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#07426a', endColorstr='#0c283d'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#07426a), to(#0c283d)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #07426a,  #0c283d); /* for firefox 3.6+ */ 
+	border-top:1px solid #1075b9;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	
+	padding:5px 20px;
+	text-decoration:none;
+	color: #fff;
+	display:inline-block;
+	font-family:Arial;
+	font-size:12px;
+	text-transform:uppercase;
+	text-shadow:-1px -1px 0 #0c283d;
+	font-weight:bold;
+	text-align:center;
+	text-decoration:none;
+}
+a.button-blue span:hover {
+	background: #134469; /* for non-css3 browsers */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0f5280', endColorstr='#143751'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#0f5280), to(#143751)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #0f5280,  #143751); /* for firefox 3.6+ */ 
+	border-top:1px solid #1f87cd;
+	color: #fff;
+}
+
+/* 3. Brown Button */
+a.button-brown {
+	border-top:1px solid #963805;
+	padding:0 0px;
+	display:inline-block;
+	font-family:Arial;
+	width: auto;
+	font-size:12px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+a.button-brown span {
+	background: #7a2d04; /* for non-css3 browsers */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#963805', endColorstr='#411802'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#963805), to(#411802)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #963805,  #411802); /* for firefox 3.6+ */ 
+	border-top:1px solid #cb4f0b;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	
+	padding:5px 20px;
+	text-decoration:none;
+	color: #fff;
+	display:inline-block;
+	font-family:Arial;
+	font-size:12px;
+	text-transform:uppercase;
+	text-shadow:-1px -1px 0 #411802;
+	font-weight:bold;
+	text-align:center;
+	text-decoration:none;
+}
+a.button-brown span:hover {
+	background: #9b4110; /* for non-css3 browsers */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b14b14', endColorstr='#5e2608'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#b14b14), to(#5e2608)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #b14b14,  #5e2608); /* for firefox 3.6+ */ 
+	border-top:1px solid #e5641e;
+	color: #fff;
+}
+
+/* 4. Green Button */
+a.button-green {
+	border-top:1px solid #097102;
+	padding:0 0px;
+	display:inline-block;
+	font-family:Arial;
+	width: auto;
+	font-size:12px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+a.button-green span {
+	background: #0b5e03; /* for non-css3 browsers */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#097102', endColorstr='#063901'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#097102), to(#063901)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #097102,  #063901); /* for firefox 3.6+ */ 
+	border-top:1px solid #1ba411;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	
+	padding:5px 20px;
+	text-decoration:none;
+	color: #fff;
+	display:inline-block;
+	font-family:Arial;
+	font-size:12px;
+	text-transform:uppercase;
+	text-shadow:-1px -1px 0 #063901;
+	font-weight:bold;
+	text-align:center;
+	text-decoration:none;
+}
+a.button-green span:hover {
+	background: #147f0a; /* for non-css3 browsers */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#15900c', endColorstr='#0d5a06'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#15900c), to(#0d5a06)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #15900c,  #0d5a06); /* for firefox 3.6+ */ 
+	border-top:1px solid #2ec323;
+	color: #fff;
+}
+
+/* 5. Red Button */
+a.button-red {
+	border-top:1px solid #991f1e;
+	padding:0 0px;
+	display:inline-block;
+	font-family:Arial;
+	width: auto;
+	font-size:12px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+a.button-red span {
+	background: #821a1a; /* for non-css3 browsers */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#991f1e', endColorstr='#4f0f0f'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#991f1e), to(#4f0f0f)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #991f1e,  #4f0f0f); /* for firefox 3.6+ */ 
+	border-top:1px solid #c63231;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	
+	padding:5px 20px;
+	text-decoration:none;
+	color: #fff;
+	display:inline-block;
+	font-family:Arial;
+	font-size:12px;
+	text-transform:uppercase;
+	text-shadow:-1px -1px 0 #4f0f0f;
+	font-weight:bold;
+	text-align:center;
+	text-decoration:none;
+}
+a.button-red span:hover {
+	background: #a12525; /* for non-css3 browsers */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b52e2d', endColorstr='#6b1919'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#b52e2d), to(#6b1919)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #b52e2d,  #6b1919); /* for firefox 3.6+ */ 
+	border-top:1px solid #e14948;
+	color: #fff;
+}

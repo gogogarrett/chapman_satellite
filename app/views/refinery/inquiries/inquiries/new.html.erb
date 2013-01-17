@@ -1,0 +1,134 @@
+  <!-- START #main -->
+  <div id="main">
+    <div class="wrap">
+      
+      <!-- START #content-left -->
+      <div id="content-left">
+        
+        <h4>Contact Us</h4>
+        
+        <%= raw @page.content_for(:body) %>
+        
+          <div class="clear"></div>
+          <div class="space"></div>
+        
+        <div class="one_half">
+          <h4>Telephone</h4>
+          <p>(903) 533-0078</p>
+          
+            <div class="clear"></div>
+            <div class="space"></div>
+            
+          <h4>Fax</h4>
+          <p>(903) 533-0333</p>
+          
+            <div class="clear"></div>
+          
+        </div>
+        
+        <div class="one_half last">
+          <h4>Office Address</h4>
+          <p> 1801 S. Broadway Ave. </p>
+          <p> Tyler, TX. 75701 </p>
+          
+            <div class="clear"></div>
+            <div class="space"></div>
+          
+          <h4>Office Email Address</h4>
+          <p>office@yourwebsite.com</p>
+          
+            <div class="clear"></div>
+          
+        </div>
+        
+          <div class="clear"></div>
+          <div class="space"></div>
+        
+          <%= form_for [refinery, :inquiries, @inquiry], html: { id: "contactform" } do |f| %>
+            <%= render :partial => "/refinery/admin/error_messages",
+                       :locals => {
+                         :object => @inquiry,
+                         :include_object_name => true
+                       } %>
+            <table>
+              <tr>
+                <td>
+                  <%= f.text_field :name, :id => "name", :class => 'text', :required => 'required', :placeholder => t('name', :scope => 'activerecord.attributes.refinery/inquiries/inquiry') %>
+                  <span>Name:</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <%= f.text_field :email, :id => "email", :class => 'text', :required => 'required', :placeholder => t('email', :scope => 'activerecord.attributes.refinery/inquiries/inquiry') %>
+                  <span>Email:</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <%= f.text_area :message, id: "message", :rows => 10, :cols => 20, :required => 'required', :placeholder => t('message', :scope => 'activerecord.attributes.refinery/inquiries/inquiry') %>
+                </td>
+              </tr>
+              <td>
+                <%= f.submit "Submit", id: "send", class: "button-black" %>
+                </td>
+              </tr>
+            </table>
+          <% end %>
+
+          <div id="response"></div>
+          <!-- END contact form -->
+      </div>
+      <!-- END #content-left -->
+      
+      <!-- START #sidebar-right -->
+      <div id="sidebar-right">
+      
+        <!-- START .sidebar -->
+        <div class="sidebar">
+          <div class="sidebar-top">
+            <p>Office Address</p>
+          </div>
+          <div class="sidebar-middle">
+            <iframe width="215" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=1801+S+Broadway+Ave,+Tyler,+TX+75701&amp;sll=32.329838,-95.300919&amp;hl=en&amp;ie=UTF8&amp;hq=&amp;hnear=1801+S+Broadway+Ave,+Tyler,+Smith,+Texas+75701&amp;ll=32.329838,-95.300919&amp;spn=0.010788,0.017638&amp;t=m&amp;z=14&amp;output=embed"></iframe>
+
+            <p style="text-align: center;">
+              <a style="color: #444;" href="https://maps.google.com/maps?q=1801+S+Broadway+Ave,+Tyler,+TX+75701&amp;sll=32.329838,-95.300919&amp;hl=en&amp;ie=UTF8&amp;hq=&amp;hnear=1801+S+Broadway+Ave,+Tyler,+Smith,+Texas+75701&amp;ll=32.329838,-95.300919&amp;spn=0.010788,0.017638&amp;t=m&amp;z=14&amp;source=embed" style="color:#0000FF;text-align:left">View Larger Map</a>
+            </p>
+
+          </div>
+        </div>
+        <!-- END .sidebar -->
+        
+          <div class="clear"></div>
+          <div class="space2"></div>
+        
+        <!-- START .sidebar -->
+        <div class="sidebar">
+          <div class="sidebar-top">
+            <p>Text Area</p>
+          </div>
+          <div class="sidebar-middle">
+            <%= @page.content_for(:side_body) %>
+          </div>
+        </div>
+        <!-- END .sidebar -->
+      
+      </div>
+      <!-- START #sidebar-right -->
+        
+      <div class="clear"></div>
+      
+    </div>
+    
+  </div>
+  <!-- END #main -->
+    
+  <div class="clear"></div>
+
+
+
+
+
+
+
+
